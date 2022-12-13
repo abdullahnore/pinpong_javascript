@@ -137,6 +137,9 @@ function winner() {
 
     localStorage.setItem("winner", arr);
   } else {
+    if (computerScore.textContent > highscore) {
+      highscore = computerScore.textContent; // if its a draw and a new highscore was made
+    }
     arr = [playerScore.textContent, "draw", highscore];
     localStorage.setItem("winner", arr);
     alert("Game  end \n Its a Draw");
