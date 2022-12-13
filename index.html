@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" ping pong game using JavaScript play against a computer with desired difficulty"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="abdullah" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" type="module"></script>
+    <title>ping pong</title>
+  </head>
+  <body>
+    <h6 id="textp" class="textplay">Press enter to play</h6>
+    <p class="textplay">
+      Press S to score player(test mode) & W for difficulty
+    </p>
+    <div class="score">
+      <!-- display score  -->
+      <div id="player-score">0</div>
+      <div id="computer-score">0</div>
+    </div>
+    <div class="ball" id="ball"></div>
+    <!-- two player where on is computer ie unlike orignal requiement of the paddle moving simultaneously -->
+    <div class="paddle left" id="player-paddle"></div>
+    <div class="paddle right" id="computer-paddle"></div>
+  </body>
+</html>
